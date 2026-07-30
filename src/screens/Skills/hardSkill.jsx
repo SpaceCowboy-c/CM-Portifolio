@@ -17,7 +17,7 @@ export default function HardSkill() {
                                 <div className="skill-card" key={i}>
                                     <i className={skill.icon}></i>
                                     <span className="skill-name"> {skill.title} </span>
-                                    <span className="skill-level">{skill.level}  </span>
+                                    {/* <span className="skill-level">{skill.level}  </span>*/}
                                 </div>
                             ))}
                         </div>
@@ -68,7 +68,7 @@ const sections = [
         skills: languages
     },
     {
-        title: "Ferramentas que domino",
+        title: "Ferramentas",
         skills: tools
     },
     {
@@ -76,7 +76,7 @@ const sections = [
         skills: frameworks
     },
     {
-        title: "Bancos de Dados que domino",
+        title: "Bancos de Dados",
         skills: databases
     },
     {

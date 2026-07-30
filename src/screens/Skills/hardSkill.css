@@ -4,18 +4,16 @@
     overflow-y: auto; /* Cria o scroll APENAS nesta tela quando o conteúdo passar do tamanho */
 }
 
-/* Força a barra de rolagem a aparecer dentro dessa div */
 .hard-skill::-webkit-scrollbar {
     display: block !important; /* Sobrescreve o display: none do body */
     width: 8px;
 }
 
-/* Deixa a barra bonitinha para combinar com seu fundo escuro */
+
 .hard-skill::-webkit-scrollbar-thumb {
     background-color: #444;
     border-radius: 4px;
 }
-/* Deixa a barra bonitinha para combinar com seu fundo escuro */
 .hard-skill::-webkit-scrollbar-track {
     background-color: #1c1c1c;
 }
@@ -153,9 +151,8 @@
 
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
-/*Anula o scroll interno e a altura de 100vh apenas no celular */
     .hard-skill {
         height: auto !important;
         overflow-y: visible !important;
@@ -208,4 +205,4 @@
         display: flex;
         justify-content: center;
      }
-}
+}*/

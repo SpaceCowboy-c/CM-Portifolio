@@ -145,15 +145,11 @@
 }
 
 
-/* Cole no final do contact.css */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .contact-content {
         margin-left: 0;
-        /* Remove a margem lateral da navbar */
         padding-top: 80px;
-        /* Espaço para a navbar do topo */
         flex-direction: column;
-        /* Empilha a foto e as informações */
         padding-left: 24px;
         padding-right: 24px;
         gap: 30px;
@@ -162,14 +158,13 @@
 
     .contact-photo {
         width: 180px;
-        /* Reduz a foto no celular */
         height: 180px;
     }
 
     .contact-links {
         justify-content: center;
         flex-wrap: wrap;
-        /* Garante que os botões quebrem linha se necessário */
+
     }
 
     .contact-title{
@@ -183,4 +178,4 @@
     .contact-farewell{
         font-size: 12px;
     }
-}
+}*/

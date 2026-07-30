@@ -10,6 +10,7 @@ export default function Home({ isMobile }) {
         <div className="home">
             <Navbar />
             <main className="home-content">
+                <div className="hero-wrapper">
                 <div className="hero">
                     <p className="hero-subtitle">Full-Stack Developer • Front-end & Mobile Specialist</p>
 
@@ -39,7 +40,8 @@ export default function Home({ isMobile }) {
                     <div className="bolha bolha-2"></div>
                     <div className="bolha bolha-3"></div>
                 </div>
-            </main>
+            </div>
+         </main>
 
 {
         isMobile && (

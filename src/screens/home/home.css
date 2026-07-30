@@ -13,6 +13,16 @@
     min-height: 100vh;
     padding: 40px 80px;
     box-sizing: border-box;
+    width: calc(100% - 220px);
+}
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero {
@@ -20,8 +30,8 @@
     z-index: 2;
     max-width: 600px;
     transform: translateY(-30px);
-    /* sobe 40px */
 }
+
 .hero-subtitle {
     color: #7a0a96;
     font-size: 14px;
@@ -79,7 +89,7 @@
 
 .hero-decoration {
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 600px;
@@ -88,12 +98,15 @@
     opacity: 0;
     animation: fadeIn 1.2s ease forwards;
     animation-delay: 0.2s;
+    pointer-events: none;
 }
 
 .bolha {
     position: absolute;
     border-radius: 50%;
     filter: blur(60px);
+    z-index: 0;
+    pointer-events: none;
     opacity: 0.5;
 }
 
@@ -160,7 +173,7 @@
 
 /* Quando o navegador detecta que a largura da tela é menor ou igual a 768px (um smartphone ou tablet vertical),
 ele lê o bloco @media e substitui apenas as propriedades específicas */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     
     .home-content {
         margin-left: 0;
@@ -196,7 +209,6 @@ ele lê o bloco @media e substitui apenas as propriedades específicas */
         box-sizing: border-box;
     }
 
-    /* Aura de bolhas roxas centralizada atrás do texto */
     .hero-decoration {
         width: 280px;
         height: 280px;
@@ -231,16 +243,16 @@ ele lê o bloco @media e substitui apenas as propriedades específicas */
         flex-direction: column;
         align-items: center;
         gap: 6px;
-        position: absolute; /* fixa o indicador no rodapé da viewport, sempre visível */
+        position: absolute; 
         bottom: 24px;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 3; /* fica acima das bolhas decorativas */
-        animation: bounceDown 2s ease-in-out infinite; /* aplica o movimento de "pulsar para baixo" infinitamente */
+        z-index: 3; 
+        animation: bounceDown 2s ease-in-out infinite; 
 
         }
     
-    .scroll-indicator-text { /* Texto pequeno acima da seta */
+    .scroll-indicator-text { 
         font-size: 10px;
         font-family: monospace;
         text-transform: uppercase;
@@ -263,4 +275,4 @@ ele lê o bloco @media e substitui apenas as propriedades específicas */
         .scroll-indicator {
             animation: bounceDown 2s ease-in-out infinite;
         }
-}
+}*/
