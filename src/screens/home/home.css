@@ -173,18 +173,25 @@
 
 /* Quando o navegador detecta que a largura da tela é menor ou igual a 768px (um smartphone ou tablet vertical),
 ele lê o bloco @media e substitui apenas as propriedades específicas */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     
     .home-content {
         margin-left: 0;
-        padding: 60px 20px 40px 20px;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .hero {
+        width: 100%;
         max-width: 100%;
-        transform: translateY(0);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .hero {
+        width: 100%;
+        max-width: 400px;
+        transform: none;
+        margin: 0 auto;
     }
 
     .hero-subtitle {
@@ -239,40 +246,34 @@ ele lê o bloco @media e substitui apenas as propriedades específicas */
     }
 
     .scroll-indicator {
-        display: flex;
-        flex-direction: column;
+         display: flex;
+         flex-direction: column;
         align-items: center;
         gap: 6px;
-        position: absolute; 
-        bottom: 24px;
+        position: absolute;
         left: 50%;
-        transform: translateX(-50%);
-        z-index: 3; 
-        animation: bounceDown 2s ease-in-out infinite; 
+        bottom: 24px;
+        animation: bounceDown 2s ease-in-out infinite;
+    }
 
-        }
-    
     .scroll-indicator-text { 
         font-size: 10px;
         font-family: monospace;
         text-transform: uppercase;
         letter-spacing: 1.5px;
         color: #ccc;
+    }
+
+    @keyframes bounceDown {
+
+        0%,
+        100% {
+            transform: translateX(-50%) translateY(0);
         }
 
-         @keyframes bounceDown {
-    
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-    
-            50% {
-                transform: translateY(10px);
-            }
+        50% {
+            transform: translateX(-50%) translateY(10px);
         }
-    
-        .scroll-indicator {
-            animation: bounceDown 2s ease-in-out infinite;
-        }
-}*/
+    }
+
+}

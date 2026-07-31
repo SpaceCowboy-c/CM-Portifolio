@@ -156,20 +156,24 @@
 }
 
 
-/*@media (max-width: 900px) {
+@media (max-width: 768px) {
+
     .certifications-content {
+        width: 100%;
+        max-width: 100%;
         margin-left: 0;
-        padding: 100px 30px 60px 30px;
     }
 
     .certifications-row {
         grid-template-columns: 1fr;
         align-items: center;
+        
     }
 
     .certifications-card {
         width: 100%;
         max-width: 320px;
+        
     }
 }
 
@@ -197,12 +201,13 @@
     .certifications-row {
         grid-template-columns: 1fr;
         gap: 20px;  /*distância entre os cards*/
+    }
     
 
-    /* .certifications-card {
+     .certifications-card {
         width: 100%;
         max-width: 100%;
         padding: 20px 20px;
         box-sizing: border-box;
     }
-}*/
+}

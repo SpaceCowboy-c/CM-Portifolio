@@ -234,8 +234,10 @@
     }
 }
 
-/*@media (max-width: 768px) {   
+@media (max-width: 768px) {   
     .about-content {
+        width: 100%;
+        max-width: 100%;
         margin-left: 0;
         padding: 30px 20px;
         flex-direction: column;
@@ -301,4 +303,4 @@
         border-radius: 12px;
         line-height: 1.2;
     }
-}*/
+}

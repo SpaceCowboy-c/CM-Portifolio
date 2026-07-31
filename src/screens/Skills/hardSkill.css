@@ -151,7 +151,7 @@
 
 }
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .hard-skill {
         height: auto !important;
@@ -205,4 +205,4 @@
         display: flex;
         justify-content: center;
      }
-}*/
+}

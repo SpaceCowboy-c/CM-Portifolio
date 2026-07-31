@@ -39,4 +39,13 @@ const projects = [
         file: 'https://github.com/SpaceCowboy-c/SGO-Rodovias',
 
     },
+
+    {
+    name: 'FinControl',
+    description: 'Este projeto foi pensado para fins de estudo e conhecimento de novas tecnologias no mercado, englobando tecnologias bastante utilizadas em projetos. O sistema tem por objetivo principal o controle das finanças pessoais do usuário, com relatórios dinâmicos e dashboards viuais. Minha Stack contou com Python e FastAPI no backend e TypeScrip e Angular para o frontend.',
+    file: 'https://github.com/SpaceCowboy-c/FinControl',
+    },
+
+  
+
 ];
