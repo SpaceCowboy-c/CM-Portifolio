@@ -34,7 +34,6 @@ export default function Home({ isMobile }) {
                         </Link>
                     )}
                 </div>
-
                 <div className="hero-decoration">
                     <div className="bolha bolha-1"></div>
                     <div className="bolha bolha-2"></div>

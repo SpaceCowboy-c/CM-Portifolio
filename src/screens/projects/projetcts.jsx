@@ -46,6 +46,12 @@ const projects = [
     file: 'https://github.com/SpaceCowboy-c/FinControl',
     },
 
+    {
+        name: 'AcolhePatinhas',
+        description: 'Aliando desenvolvimento técnico e impacto social, este projeto foi criado para facilitar e gerenciar o processo de adoção de animais. A aplicação possui um sistema completo para o controle de adoções, incluindo o cadastro de usuários e animais e uma interface interativa com um feed de notícias dinâmico, inspirado no estilo do Instagram. Para a construção dessa solução, utilizei tecnologias modernas e consolidadas no mercado: Flutter e Dart no Front-end, Java com Spring Boot no Back-end e Supabase como banco de dados.',
+        file: 'https://github.com/ArthurDelavy/acolhe-patinhas',
+    },
+
   
 
 ];
